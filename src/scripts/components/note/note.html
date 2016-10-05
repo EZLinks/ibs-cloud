@@ -1,0 +1,11 @@
+﻿<div ng-if="$ctrl.note" class="ui basic icon button" ng-click="$ctrl.show=true">
+    <i class="tag small icon"><span></span></i>
+
+    <sm-modal settings="{transition: 'fade', detachable: false}" style="min-width: 250px;font-size:1.2em" visible="$ctrl.show" sm-modal-show-dimmer="true">
+        <div class="header" ng-bind="$ctrl.header"></div>
+        <div class="content" ng-bind="$ctrl.note"></div>
+        <div class="actions">
+            <div class="ui basic black button" ng-click="$ctrl.show=false">OK</div>
+        </div>
+    </sm-modal>
+</div>

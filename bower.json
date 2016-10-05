@@ -1,0 +1,46 @@
+{
+  "name": "ibs-cloud",
+  "version": "0.1.0",
+  "description": "IBS Core Angular Module",
+  "main": "dist/ibs-cloud.js",
+  "authors": [
+    "IBS Club Software",
+    "an EZLinks Golf Company"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".tmp",
+    "bin",
+    "coverage",
+    "node_modules",
+    "obj",
+    "src",    
+    "test",
+    "TestOutput",
+    "ibs-cloud",
+    "typings",
+    ".bowerrc",
+    ".jshintrc",
+    ".tfignore",
+    "Gruntfile.js",
+    "bower.json",
+    "IBS.Cloud.Web.njsproj",
+    "IBS.Cloud.Web.njsproj.vspscc",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": "1.4.7",
+    "angular-bootstrap": "^2.0.2",
+    "angular-google-chart": "0.1.0",
+    "angular-semantic-ui": "git://github.com/ClickerMonkey/SemanticUI-Angular.git",
+    "angular-ui-grid": "3.0.7",
+    "jquery": "2.1.4",
+    "moment": "2.13.0",
+    "moment-timezone": "0.5.0",
+    "angular-odata-resources": "^1.0.22",
+    "odata-ui-grid": "*",
+    "semantic": "semantic-ui#^2.2.2",
+    "lodash": "4.14.2"
+  }
+}

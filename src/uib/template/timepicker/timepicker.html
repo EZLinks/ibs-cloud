@@ -1,0 +1,28 @@
+﻿<table class="ui basic collapsing borderless table timepicker">
+    <tbody class="center aligned">
+        <tr ng-show="::showSpinners" class="buttonRow">
+            <td class="collapsing"><button ng-click="incrementHours()" ng-class="{disabled: noIncrementHours()}" class="ui basic icon button"><i class="angle up icon"></i></button></td>
+            <td class="borderless"></td>
+            <td class="collapsing"><button ng-click="incrementMinutes()" ng-class="{disabled: noIncrementMinutes()}" class="ui basic icon button"><i class="angle up icon"></i></button></td>
+            <td class="collapsing" ng-show="showMeridian"></td>
+        </tr>
+
+        <tr class="ui form buttonRow">
+            <td class="borderless field" ng-class="{'has-error': invalidHours}">
+                <input type="text" ng-model="hours" ng-change="updateHours()" class="center aligned" ng-readonly="::readonlyInput" maxlength="2">
+            </td>
+            <td class="borderless">:</td>
+            <td class="borderless field" ng-class="{'has-error': invalidMinutes}">
+                <input type="text" ng-model="minutes" ng-change="updateMinutes()" class="center aligned" ng-readonly="::readonlyInput" maxlength="2">
+            </td>
+            <td class="borderless" ng-show="showMeridian"><button type="button" ng-class="{disabled: noToggleMeridian()}" class="ui basic button center aligned" ng-click="toggleMeridian()"><span ng-bind="meridian"></span></button></td>
+        </tr>
+
+        <tr ng-show="::showSpinners" class="buttonRow">
+            <td class="borderless"><button ng-click="decrementHours()" ng-class="{disabled: noDecrementHours()}" class="ui basic icon button"><i class="angle down icon"></i></button></td>
+            <td class="borderless"></td>
+            <td class="borderless"><button ng-click="decrementMinutes()" ng-class="{disabled: noDecrementMinutes()}" class="ui basic icon button"><i class="angle down icon"></i></button></td>
+            <td class="borderless" ng-show="showMeridian"></td>
+        </tr>
+    </tbody>
+</table>

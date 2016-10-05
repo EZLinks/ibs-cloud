@@ -1,0 +1,19 @@
+﻿<script type="text/javascript">
+    app.cp.register('PieChartTestController', ['$scope', '$q', function ($scope, $q) {
+        var vm = this;
+
+        vm.data = function () {
+            var deferred = $q.defer();
+
+            deferred.resolve([
+                ['Capacity - 744', 744],
+                ['Reserved - 298', 298]
+            ]);
+
+            return deferred.promise;
+        };
+    }]);
+</script>
+<div ng-controller="PieChartTestController as controller">
+    <pie-chart pc-data-call="controller.data()"></pie-chart>
+</div>

@@ -1,0 +1,7 @@
+﻿partial-loading-indicator.hidden .part-loader{
+	display: none!important;
+}
+
+.empty-loader {
+	height : 350px;
+}

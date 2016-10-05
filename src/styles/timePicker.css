@@ -1,0 +1,21 @@
+﻿.buttonRow {
+    border:none;
+}
+
+.buttonRow td {
+    padding:0 !important;
+    border:none !important;
+}
+
+.buttonRow td:nth-child(2) {
+    width:1px;
+}
+
+.buttonRow input {
+    width:60px;
+}
+
+.buttonRow button {
+    padding: 6px 12px !important;
+    border:none !important;
+}

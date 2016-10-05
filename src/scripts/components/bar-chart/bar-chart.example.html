@@ -1,0 +1,19 @@
+﻿<script type="text/javascript">
+    app.cp.register('BarChartTestController', ['$scope', '$q', function ($scope, $q) {
+        var vm = this;
+
+        vm.data = function () {
+            var deferred = $q.defer();
+
+            deferred.resolve([
+                ['Walk On', 80, 80],
+                ['Advanced', 20, 20]
+            ]);
+
+            return deferred.promise;
+        };
+    }]);
+</script>
+<div ng-controller="BarChartTestController as controller">
+    <bar-chart bc-data-call="controller.data()"></bar-chart>
+</div>

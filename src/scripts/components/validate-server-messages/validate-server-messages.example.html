@@ -1,0 +1,31 @@
+﻿<script type="text/javascript">
+    app.cp.register('ValidateServerMessagesTestController', function ($log, serverValidation) {
+
+        var vm = this;
+        vm.myModel = 'test text';
+        vm.myFormId = 'myTestFormId2';
+        
+        serverValidation.validate(vm.myFormId, {
+
+            hasServerValidationErrors: true,
+            errors: {
+                'your-model-name': ['This is first error', 'This is second error'],
+                'your-model-name1': ['This is 3rd error', 'This is 4th error']
+            }
+
+        });
+        
+
+        // todo : don't forget to clear errors on destroy
+
+    });
+</script>
+<div ng-controller="ValidateServerMessagesTestController as controller" data-form-id="{{::controller.myFormId}}">
+    
+    Error messages for your-model-name only :
+    <validate-server-messages vsm-model="your-model-name"></validate-server-messages>
+
+    Whole error messages in form:
+    <validate-server-messages vsm-whole-form-errors></validate-server-messages>
+
+</div>

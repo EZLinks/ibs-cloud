@@ -1,0 +1,11 @@
+.tmp
+bin
+coverage
+node_modules
+obj
+TestOutput
+ibs-cloud
+typings
+.tfignore
+IBS.Cloud.Web.njsproj
+IBS.Cloud.Web.njsproj.vspscc

@@ -1,0 +1,34 @@
+{
+  "name": "semantic-ui-angular-jquery",
+  "version": "0.1.1",
+  "homepage": "https://github.com/ClickerMonkey/SemanticUI-Angular",
+  "authors": [
+    "Philip Diffenderfer <pdiffenderfer@gmail.com>"
+  ],
+  "description": "Angular Directives for Semantic UI & jQuery",
+  "main": "angular-semantic-ui.js",
+  "keywords": [
+    "javascript",
+    "semantic-ui",
+    "angular",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "6d2b7a05abac20a091f9a556f03a8364adede744"
+  },
+  "_source": "https://github.com/ClickerMonkey/SemanticUI-Angular.git",
+  "_target": "^0.1.1",
+  "_originalSource": "semantic-ui-angular-jquery",
+  "_direct": true
+}

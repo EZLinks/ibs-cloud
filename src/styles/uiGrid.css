@@ -1,0 +1,21 @@
+﻿.gridW400 {
+	min-width : 400px;
+}
+
+.grid-error-container {
+	top: 50%; 
+	margin: 0; 
+	position: relative;
+}
+
+.grid-error-text {
+	margin-bottom: 15px; 
+	display: block;
+}
+
+
+/* Fee Schedule */
+
+.price-parent.hidden {
+	display : none!important;
+}

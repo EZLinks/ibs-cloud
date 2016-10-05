@@ -1,0 +1,66 @@
+{
+  "name": "odata-ui-grid",
+  "description": "odata uiGrid",
+  "license": "MIT",
+  "keywords": [
+    "uiGrid",
+    "ngGrid",
+    "Odata"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigopivi/odataUiGrid.git"
+  },
+  "authors": [
+    "Rodrigo Pimentel"
+  ],
+  "main": [
+    "dist/odata-ui-grid.js"
+  ],
+  "private": false,
+  "ignore": [
+    "bin",
+    "lib",
+    "demo",
+    "vendor",
+    "obj",
+    "node_modules",
+    "**/.*",
+    "**/*.csproj",
+    "**/*.user",
+    "**/*.sln",
+    "**/*.html",
+    "**/*.config",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintrc",
+    "*.json",
+    "gulpfile.js",
+    "index.html",
+    "karma.conf.js",
+    "package.json",
+    "README.txt"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-odata-resources": "~1.0.10",
+    "angular-ui-grid": "~3.0.5"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "angular-mocks": "~1.4.4",
+    "angular-scenario": "~1.4.4",
+    "jasmine": "~2.3.4"
+  },
+  "homepage": "https://github.com/VladislavSudakov/odataUiGrid",
+  "_release": "56f3975e80",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "56f3975e805cc6547aa5f8fcdbb38227169014f1"
+  },
+  "_source": "https://github.com/VladislavSudakov/odataUiGrid.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/VladislavSudakov/odataUiGrid.git",
+  "_direct": true
+}

@@ -1,0 +1,69 @@
+﻿
+.notify-success {
+    background-color: #eaf7ec;
+    color: #349946;
+    border-color: #c3e8ca;
+}
+
+.notify-error {
+    background-color: #ffe0d9;
+    color: #ef470a;
+    border-color: #ffb7a8;
+}
+
+.notify-info {
+    background-color: #e5f5fa;
+    color: #0487c4;
+    border-color: #b7e1f0;
+}
+
+.notify-warning {
+    background-color: #fff4d9;
+    color: #0487c4;
+    border-color: #fff0c8;
+}
+
+.notification-list {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 20000; /* Needs to be 'on top of' Kendo's stuff */
+}
+
+.notification .close-notification {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 12px;
+}
+
+.notification-list .notification {
+    position: relative;
+    min-height: 40px;
+    width: 350px;
+    padding: 0 2px 4px 6px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 12px;
+    border: 1px solid;
+    -moz-transition: 400ms linear all;
+    -o-transition: 400ms linear all;
+    -webkit-transition: 400ms linear all;
+    transition: 400ms linear all;
+    opacity: 1;
+}
+
+.notification .message {
+    position: relative;
+    display: inline-block;
+    padding: 3px 0 0 0;
+    margin-right: 14px;
+    width: 278px;
+}
+
+.notification-list .notification.fade-out {
+    opacity: 0;
+}

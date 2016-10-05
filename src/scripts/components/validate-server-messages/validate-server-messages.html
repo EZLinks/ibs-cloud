@@ -1,0 +1,9 @@
+﻿<div data-ng-if="vsm.hasErrors()" class="ui error message" style="display:block!important">
+    <i data-ng-click="vsm.clearAllErrors()" class="close icon"></i>
+    <div class="header">
+        There was an error with your submission
+    </div>
+    <ul class="list">
+        <li data-ng-repeat="error in vsm.getErrors() track by $index"><span ng-bind="error"></span></li>
+    </ul>
+</div>

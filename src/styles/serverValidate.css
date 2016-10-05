@@ -1,0 +1,19 @@
+﻿/*This is just an example classes for our validation
+TODO : make proper styling					      */
+
+div.error > div.ui.dropdown.ng-valid, /* sm-dropdown */
+.error angular-number-picker .ui.action.input,
+.error angular-number-picker .ui.action.input input,
+.ui.segment.container.error ,
+.error .timepicker,
+.error .weekdays,
+.error [uib-datepicker-popup],
+.error .wysihtml5-editor,
+.has-error input {
+
+    background: #fff6f6!important;
+    border-color: #e0b4b4!important;
+    color: #9f3a38!important;
+    box-shadow: none!important;
+
+}
