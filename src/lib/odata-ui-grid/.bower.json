@@ -52,15 +52,14 @@
     "angular-scenario": "~1.4.4",
     "jasmine": "~2.3.4"
   },
-  "homepage": "https://github.com/VladislavSudakov/odataUiGrid",
-  "_release": "56f3975e80",
+  "homepage": "https://github.com/rodrigopivi/odataUiGrid",
+  "_release": "23f5d07260",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "56f3975e805cc6547aa5f8fcdbb38227169014f1"
+    "commit": "23f5d072605ef562e0688a2ce66bfa6413d7f93e"
   },
-  "_source": "https://github.com/VladislavSudakov/odataUiGrid.git",
+  "_source": "https://github.com/rodrigopivi/odataUiGrid.git",
   "_target": "*",
-  "_originalSource": "https://github.com/VladislavSudakov/odataUiGrid.git",
-  "_direct": true
+  "_originalSource": "odata-ui-grid"
 }

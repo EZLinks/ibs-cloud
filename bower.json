@@ -14,7 +14,7 @@
     "coverage",
     "node_modules",
     "obj",
-    "src",    
+    "src",
     "test",
     "TestOutput",
     "ibs-cloud",
@@ -31,16 +31,16 @@
   ],
   "dependencies": {
     "angular": "1.4.7",
-    "angular-bootstrap": "^2.0.2",
+    "angular-bootstrap": "2.0.2",
     "angular-google-chart": "0.1.0",
-    "angular-semantic-ui": "git://github.com/ClickerMonkey/SemanticUI-Angular.git",
     "angular-ui-grid": "3.0.7",
     "jquery": "2.1.4",
     "moment": "2.13.0",
     "moment-timezone": "0.5.0",
-    "angular-odata-resources": "^1.0.22",
+    "angular-odata-resources": "1.0.22",
     "odata-ui-grid": "*",
-    "semantic": "semantic-ui#^2.2.2",
-    "lodash": "4.14.2"
+    "semantic-ui": "^2.2.2",
+    "lodash": "4.14.2",
+    "semantic-ui-angular-jquery": "0.1.1"
   }
 }
