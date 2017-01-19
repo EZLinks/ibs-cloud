@@ -54,8 +54,8 @@ uib-datepicker-popup-wrap th{
 }
 
 .uib-datepicker button.text-muted {
-   background: #c0c1c2 
-   
+   background: #c0c1c2
+
 }
 
 .uib-datepicker button.text-muted:hover {
@@ -74,16 +74,15 @@ uib-datepicker-popup-wrap th{
 }
 
 button.ui.primaryButton.button.primary {
-    background: RGBA(84, 133, 107, 1.00);
+    background: #15284B;
     color: #EEE;
     border-radius: 3px !important;
     border: 1px solid #333 !important;
-    
+
 
 }
 
-
-day-selector td,   
+day-selector td,
 div.uib-datepicker td,
 uib-daypicker  td
 
@@ -91,16 +90,18 @@ uib-daypicker  td
     margin: 5px 5px;
     padding: 7px 5px;
     border-top: 1px solid #666666;
-    
+
 }
 
 button.ui.button.small.active {
     color: #EEEEEE !important;
-    background: RGBA(84, 133, 107, 1.00) !important
+    background: #3A6D8E !important;
 }
 
+button.ui.button.small.today:not(.active) {
+    background-color: RGBA(151, 162, 174, 1.00) !important;
+}
 
 .day-selector button.ui.button.small span {
-    padding: .2em .5em;    
+    padding: .2em .5em;
 }
-
