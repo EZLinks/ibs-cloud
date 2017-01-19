@@ -2573,47 +2573,84 @@ angular.module('ibs.cloud').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('uib/template/datepicker/day.html',
-    "<table role=\"grid\" aria-labelledby=\"{{::uniqueId}}-title\" aria-activedescendant=\"{{activeDateId}}\">\n" +
-    "  <thead>\n" +
-    "    <tr>\n" +
-    "      <th><button type=\"button\" class=\"ui button small pull-left\" ng-click=\"move(-1)\" tabindex=\"-1\"><i class=\"icon chevron left\"></i></button></th>\n" +
-    "      <th colspan=\"{{::5 + showWeeks}}\"><button id=\"{{::uniqueId}}-title\" role=\"heading\" aria-live=\"assertive\" aria-atomic=\"true\" type=\"button\" class=\"ui button small\" ng-click=\"toggleMode()\" ng-disabled=\"datepickerMode === maxMode\" tabindex=\"-1\" style=\"width:100%;\"><strong><span ng-bind=\"title\"></span></strong></button></th>\n" +
-    "      <th><button type=\"button\" class=\"ui button small pull-right\" ng-click=\"move(1)\" tabindex=\"-1\"><i class=\"icon chevron right\"></i></button></th>\n" +
-    "    </tr>\n" +
-    "    <tr>\n" +
-    "      <th ng-if=\"showWeeks\" class=\"text-center\"></th>\n" +
-    "      <th ng-repeat=\"label in ::labels track by $index\" class=\"text-center\"><small aria-label=\"{{::label.full}}\"><span ng-bind=\"label.abbr\"></span></small></th>\n" +
-    "    </tr>\n" +
-    "  </thead>\n" +
-    "  <tbody>\n" +
-    "    <tr ng-repeat=\"row in rows track by $index\">\n" +
-    "      <td ng-if=\"showWeeks\" class=\"text-center\"><em><span ng-bind=\"weekNumbers[$index]\"></span></em></td>\n" +
-    "      <td ng-repeat=\"dt in row track by dt.date\" class=\"text-center\" role=\"gridcell\" id=\"{{::dt.uid}}\" ng-class=\"::dt.customClass\">\n" +
-    "        <button type=\"button\" style=\"min-width:100%;\" class=\"ui button small\" ng-class=\"{'btn-info': dt.selected, active: isActive(dt), today: dt.current, 'text-muted': dt.secondary }\" ng-click=\"select(dt.date)\" ng-disabled=\"dt.disabled\" tabindex=\"-1\"><span ng-class=\"::{'text-info': dt.current}\" ng-bind=\"dt.label\"></span></button>\n" +
-    "      </td>\n" +
-    "    </tr>\n" +
-    "  </tbody>\n" +
-    "</table>\n"
+    "<table role=\"grid\" aria-labelledby=\"{{::uniqueId}}-title\" aria-activedescendant=\"{{activeDateId}}\">\r" +
+    "\n" +
+    "  <thead>\r" +
+    "\n" +
+    "    <tr>\r" +
+    "\n" +
+    "      <th><button type=\"button\" class=\"ui button small pull-left\" ng-click=\"move(-1)\" tabindex=\"-1\"><i class=\"icon chevron left\"></i></button></th>\r" +
+    "\n" +
+    "      <th colspan=\"{{::5 + showWeeks}}\"><button id=\"{{::uniqueId}}-title\" role=\"heading\" aria-live=\"assertive\" aria-atomic=\"true\" type=\"button\" class=\"ui button small\" ng-click=\"toggleMode()\" ng-disabled=\"datepickerMode === maxMode\" tabindex=\"-1\" style=\"width:100%;\"><strong><span ng-bind=\"title\"></span></strong></button></th>\r" +
+    "\n" +
+    "      <th><button type=\"button\" class=\"ui button small pull-right\" ng-click=\"move(1)\" tabindex=\"-1\"><i class=\"icon chevron right\"></i></button></th>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "    <tr>\r" +
+    "\n" +
+    "      <th ng-if=\"showWeeks\" class=\"text-center\"></th>\r" +
+    "\n" +
+    "      <th ng-repeat=\"label in ::labels track by $index\" class=\"text-center\"><small aria-label=\"{{::label.full}}\"><span ng-bind=\"label.abbr\"></span></small></th>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "  </thead>\r" +
+    "\n" +
+    "  <tbody>\r" +
+    "\n" +
+    "    <tr ng-repeat=\"row in rows track by $index\">\r" +
+    "\n" +
+    "      <td ng-if=\"showWeeks\" class=\"text-center\"><em><span ng-bind=\"weekNumbers[$index]\"></span></em></td>\r" +
+    "\n" +
+    "      <td ng-repeat=\"dt in row track by dt.date\" class=\"text-center\" role=\"gridcell\" id=\"{{::dt.uid}}\" ng-class=\"::dt.customClass\">\r" +
+    "\n" +
+    "        <button type=\"button\" style=\"min-width:100%;\" class=\"ui button small\" ng-class=\"{'btn-info': dt.selected, active: isActive(dt), today: dt.current, 'text-muted': dt.secondary }\" ng-click=\"select(dt.date)\" ng-disabled=\"dt.disabled\" tabindex=\"-1\"><span ng-class=\"::{'text-info': dt.current}\" ng-bind=\"dt.label\"></span></button>\r" +
+    "\n" +
+    "      </td>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "  </tbody>\r" +
+    "\n" +
+    "</table>\r" +
+    "\n"
   );
 
 
   $templateCache.put('uib/template/datepicker/month.html',
-    "<table role=\"grid\" aria-labelledby=\"{{::uniqueId}}-title\" aria-activedescendant=\"{{activeDateId}}\">\n" +
-    "  <thead style=\"padding-bottom:1px;\">\n" +
-    "    <tr>\n" +
-    "      <th><button type=\"button\" class=\"ui button small\" ng-click=\"move(-1)\" tabindex=\"-1\" style=\"width:100%\"><i class=\"icon chevron left\"></i></button></th>\n" +
-    "      <th><button id=\"{{::uniqueId}}-title\" role=\"heading\" aria-live=\"assertive\" aria-atomic=\"true\" type=\"button\" class=\"ui button small\" ng-click=\"toggleMode()\" ng-disabled=\"datepickerMode === maxMode\" tabindex=\"-1\" style=\"width:100%\"><strong><span ng-bind=\"title\"></span></strong></button></th>\n" +
-    "      <th><button type=\"button\" class=\"ui button small\" ng-click=\"move(1)\" tabindex=\"-1\" style=\"width:100%\"><i class=\"icon chevron right\"></i></button></th>\n" +
-    "    </tr>\n" +
-    "  </thead>\n" +
-    "  <tbody>\n" +
-    "    <tr ng-repeat=\"row in rows track by $index\">\n" +
-    "      <td ng-repeat=\"dt in row track by dt.date\" class=\"text-center\" role=\"gridcell\" id=\"{{::dt.uid}}\" ng-class=\"::dt.customClass\">\n" +
-    "        <button type=\"button\" style=\"min-width:100%;\" class=\"ui button small\" ng-class=\"{'btn-info': dt.selected, active: isActive(dt)}\" ng-click=\"select(dt.date)\" ng-disabled=\"dt.disabled\" tabindex=\"-1\"><span ng-class=\"::{'text-info': dt.current}\" ng-bind=\"dt.label\"></span></button>\n" +
-    "      </td>\n" +
-    "    </tr>\n" +
-    "  </tbody>\n" +
-    "</table>\n"
+    "<table role=\"grid\" aria-labelledby=\"{{::uniqueId}}-title\" aria-activedescendant=\"{{activeDateId}}\">\r" +
+    "\n" +
+    "  <thead style=\"padding-bottom:1px;\">\r" +
+    "\n" +
+    "    <tr>\r" +
+    "\n" +
+    "      <th><button type=\"button\" class=\"ui button small\" ng-click=\"move(-1)\" tabindex=\"-1\" style=\"width:100%\"><i class=\"icon chevron left\"></i></button></th>\r" +
+    "\n" +
+    "      <th><button id=\"{{::uniqueId}}-title\" role=\"heading\" aria-live=\"assertive\" aria-atomic=\"true\" type=\"button\" class=\"ui button small\" ng-click=\"toggleMode()\" ng-disabled=\"datepickerMode === maxMode\" tabindex=\"-1\" style=\"width:100%\"><strong><span ng-bind=\"title\"></span></strong></button></th>\r" +
+    "\n" +
+    "      <th><button type=\"button\" class=\"ui button small\" ng-click=\"move(1)\" tabindex=\"-1\" style=\"width:100%\"><i class=\"icon chevron right\"></i></button></th>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "  </thead>\r" +
+    "\n" +
+    "  <tbody>\r" +
+    "\n" +
+    "    <tr ng-repeat=\"row in rows track by $index\">\r" +
+    "\n" +
+    "      <td ng-repeat=\"dt in row track by dt.date\" class=\"text-center\" role=\"gridcell\" id=\"{{::dt.uid}}\" ng-class=\"::dt.customClass\">\r" +
+    "\n" +
+    "        <button type=\"button\" style=\"min-width:100%;\" class=\"ui button small\" ng-class=\"{'btn-info': dt.selected, active: isActive(dt)}\" ng-click=\"select(dt.date)\" ng-disabled=\"dt.disabled\" tabindex=\"-1\"><span ng-class=\"::{'text-info': dt.current}\" ng-bind=\"dt.label\"></span></button>\r" +
+    "\n" +
+    "      </td>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "  </tbody>\r" +
+    "\n" +
+    "</table>\r" +
+    "\n"
   );
 
 
@@ -2643,22 +2680,38 @@ angular.module('ibs.cloud').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('uib/template/datepicker/year.html',
-    "<table role=\"grid\" aria-labelledby=\"{{::uniqueId}}-title\" aria-activedescendant=\"{{activeDateId}}\">\n" +
-    "  <thead>\n" +
-    "    <tr>\n" +
-    "      <th><button type=\"button\" class=\"ui button pull-left\" ng-click=\"move(-1)\" tabindex=\"-1\"><i class=\"icon chevron left\"></i></button></th>\n" +
-    "      <th colspan=\"3\"><button id=\"{{::uniqueId}}-title\" role=\"heading\" aria-live=\"assertive\" aria-atomic=\"true\" type=\"button\" class=\"ui button\" ng-click=\"toggleMode()\" ng-disabled=\"datepickerMode === maxMode\" tabindex=\"-1\" style=\"width:100%;\"><strong><span ng-bind=\"title\"></span></strong></button></th>\n" +
-    "      <th><button type=\"button\" class=\"ui button pull-right\" ng-click=\"move(1)\" tabindex=\"-1\"><i class=\"icon chevron right\"></i></button></th>\n" +
-    "    </tr>\n" +
-    "  </thead>\n" +
-    "  <tbody>\n" +
-    "    <tr ng-repeat=\"row in rows track by $index\">\n" +
-    "      <td ng-repeat=\"dt in row track by dt.date\" class=\"text-center\" role=\"gridcell\" id=\"{{::dt.uid}}\">\n" +
-    "        <button type=\"button\" style=\"min-width:100%;\" class=\"ui button\" ng-class=\"{'btn-info': dt.selected, active: isActive(dt)}\" ng-click=\"select(dt.date)\" ng-disabled=\"dt.disabled\" tabindex=\"-1\"><span ng-class=\"::{'text-info': dt.current}\" ng-bind=\"dt.label\"></span></button>\n" +
-    "      </td>\n" +
-    "    </tr>\n" +
-    "  </tbody>\n" +
-    "</table>\n"
+    "<table role=\"grid\" aria-labelledby=\"{{::uniqueId}}-title\" aria-activedescendant=\"{{activeDateId}}\">\r" +
+    "\n" +
+    "  <thead>\r" +
+    "\n" +
+    "    <tr>\r" +
+    "\n" +
+    "      <th><button type=\"button\" class=\"ui button pull-left\" ng-click=\"move(-1)\" tabindex=\"-1\"><i class=\"icon chevron left\"></i></button></th>\r" +
+    "\n" +
+    "      <th colspan=\"3\"><button id=\"{{::uniqueId}}-title\" role=\"heading\" aria-live=\"assertive\" aria-atomic=\"true\" type=\"button\" class=\"ui button\" ng-click=\"toggleMode()\" ng-disabled=\"datepickerMode === maxMode\" tabindex=\"-1\" style=\"width:100%;\"><strong><span ng-bind=\"title\"></span></strong></button></th>\r" +
+    "\n" +
+    "      <th><button type=\"button\" class=\"ui button pull-right\" ng-click=\"move(1)\" tabindex=\"-1\"><i class=\"icon chevron right\"></i></button></th>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "  </thead>\r" +
+    "\n" +
+    "  <tbody>\r" +
+    "\n" +
+    "    <tr ng-repeat=\"row in rows track by $index\">\r" +
+    "\n" +
+    "      <td ng-repeat=\"dt in row track by dt.date\" class=\"text-center\" role=\"gridcell\" id=\"{{::dt.uid}}\">\r" +
+    "\n" +
+    "        <button type=\"button\" style=\"min-width:100%;\" class=\"ui button\" ng-class=\"{'btn-info': dt.selected, active: isActive(dt)}\" ng-click=\"select(dt.date)\" ng-disabled=\"dt.disabled\" tabindex=\"-1\"><span ng-class=\"::{'text-info': dt.current}\" ng-bind=\"dt.label\"></span></button>\r" +
+    "\n" +
+    "      </td>\r" +
+    "\n" +
+    "    </tr>\r" +
+    "\n" +
+    "  </tbody>\r" +
+    "\n" +
+    "</table>\r" +
+    "\n"
   );
 
 
